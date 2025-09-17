@@ -1,0 +1,134 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"_wtyFagGHv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wix Settings\",\"col\":4}},{\"id\":\"PUfFJZDzqc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wix Sync Log\",\"col\":4}},{\"id\":\"Y3qy-1Jw2Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"id\":\"MhOXSKwBBJ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Sync Management</span>\",\"col\":12}},{\"id\":\"Rb5oH7M_6D\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":4}},{\"id\":\"dTxDm4lGNj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":4}},{\"id\":\"QN4F8rD5Ph\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Warehouse\",\"col\":4}}",
+ "creation": "2024-01-01 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "integration",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Wix Integration",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 0,
+   "link_to": "Wix Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sync Logs",
+   "link_count": 0,
+   "link_to": "Wix Sync Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Items",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Orders",
+   "link_count": 0,
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customers",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Wix Integration",
+ "name": "Wix Integration",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 15.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Wix Settings",
+   "link_to": "Wix Settings",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Wix Sync Log",
+   "link_to": "Wix Sync Log",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Item",
+   "link_to": "Item",
+   "stats_filter": "{\"sync_with_wix\": 1}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Sales Order",
+   "link_to": "Sales Order",
+   "stats_filter": "{\"wix_order_id\": [\"is\", \"set\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Customer",
+   "link_to": "Customer",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Warehouse",
+   "link_to": "Warehouse",
+   "stats_filter": "{}",
+   "type": "DocType"
+  }
+ ],
+ "title": "Wix Integration"
+}
