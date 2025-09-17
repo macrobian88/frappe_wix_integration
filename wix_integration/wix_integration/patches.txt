@@ -1,0 +1,5 @@
+# Patch file for Wix Integration app
+# Add any database patches here
+
+# Example:
+# execute:frappe.reload_doc('core', 'doctype', 'docfield')
