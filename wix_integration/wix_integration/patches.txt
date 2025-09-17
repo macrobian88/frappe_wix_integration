@@ -1,0 +1,4 @@
+# Patches for Wix Integration App
+# Format: execute:before_migrate
+# execute:[post_model_sync]
+wix_integration.patches.v1_0.create_wix_settings_single
