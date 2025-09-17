@@ -1,0 +1,293 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "general_settings_section",
+  "enable_sync",
+  "wix_site_id",
+  "column_break_4",
+  "wix_api_key",
+  "wix_account_id",
+  "section_break_7",
+  "default_item_group",
+  "default_warehouse",
+  "column_break_10",
+  "default_customer_group",
+  "default_territory",
+  "sync_settings_section",
+  "sync_products",
+  "sync_orders",
+  "column_break_16",
+  "sync_inventory",
+  "sync_customers",
+  "advanced_settings_section",
+  "sync_frequency",
+  "max_retry_attempts",
+  "column_break_21",
+  "connection_timeout",
+  "enable_webhook",
+  "connection_status_section",
+  "last_sync",
+  "sync_status",
+  "column_break_26",
+  "total_products_synced",
+  "total_orders_synced",
+  "test_connection_section",
+  "test_connection_btn"
+ ],
+ "fields": [
+  {
+   "default": "Wix Settings",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "general_settings_section",
+   "fieldtype": "Section Break",
+   "label": "General Settings"
+  },
+  {
+   "default": "0",
+   "description": "Enable sync between Wix and ERPNext",
+   "fieldname": "enable_sync",
+   "fieldtype": "Check",
+   "label": "Enable Sync"
+  },
+  {
+   "description": "Your Wix Site ID (found in Wix dashboard)",
+   "fieldname": "wix_site_id",
+   "fieldtype": "Data",
+   "label": "Wix Site ID",
+   "mandatory_depends_on": "enable_sync"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Wix API Key for authentication",
+   "fieldname": "wix_api_key",
+   "fieldtype": "Password",
+   "label": "Wix API Key",
+   "mandatory_depends_on": "enable_sync"
+  },
+  {
+   "description": "Wix Account ID (optional)",
+   "fieldname": "wix_account_id",
+   "fieldtype": "Data",
+   "label": "Wix Account ID"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Default Settings"
+  },
+  {
+   "description": "Default Item Group for Wix products",
+   "fieldname": "default_item_group",
+   "fieldtype": "Link",
+   "label": "Default Item Group",
+   "mandatory_depends_on": "enable_sync",
+   "options": "Item Group"
+  },
+  {
+   "description": "Default Warehouse for Wix inventory",
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Default Customer Group for Wix customers",
+   "fieldname": "default_customer_group",
+   "fieldtype": "Link",
+   "label": "Default Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "description": "Default Territory for Wix orders",
+   "fieldname": "default_territory",
+   "fieldtype": "Link",
+   "label": "Default Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "sync_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Sync Settings"
+  },
+  {
+   "default": "1",
+   "description": "Sync products between Wix and ERPNext",
+   "fieldname": "sync_products",
+   "fieldtype": "Check",
+   "label": "Sync Products"
+  },
+  {
+   "default": "1",
+   "description": "Sync orders from Wix to ERPNext",
+   "fieldname": "sync_orders",
+   "fieldtype": "Check",
+   "label": "Sync Orders"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Sync inventory levels between systems",
+   "fieldname": "sync_inventory",
+   "fieldtype": "Check",
+   "label": "Sync Inventory"
+  },
+  {
+   "default": "0",
+   "description": "Sync customer data from Wix to ERPNext",
+   "fieldname": "sync_customers",
+   "fieldtype": "Check",
+   "label": "Sync Customers"
+  },
+  {
+   "fieldname": "advanced_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Advanced Settings"
+  },
+  {
+   "default": "Hourly",
+   "description": "How often to sync data automatically",
+   "fieldname": "sync_frequency",
+   "fieldtype": "Select",
+   "label": "Sync Frequency",
+   "options": "Manual\nHourly\nDaily\nWeekly"
+  },
+  {
+   "default": "3",
+   "description": "Maximum number of retry attempts for failed syncs",
+   "fieldname": "max_retry_attempts",
+   "fieldtype": "Int",
+   "label": "Max Retry Attempts"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "30",
+   "description": "Connection timeout in seconds",
+   "fieldname": "connection_timeout",
+   "fieldtype": "Int",
+   "label": "Connection Timeout (seconds)"
+  },
+  {
+   "default": "0",
+   "description": "Enable webhook notifications from Wix",
+   "fieldname": "enable_webhook",
+   "fieldtype": "Check",
+   "label": "Enable Webhooks"
+  },
+  {
+   "fieldname": "connection_status_section",
+   "fieldtype": "Section Break",
+   "label": "Connection Status"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sync_status",
+   "fieldtype": "Select",
+   "label": "Sync Status",
+   "options": "\nConnected\nDisconnected\nError\nSyncing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_products_synced",
+   "fieldtype": "Int",
+   "label": "Total Products Synced",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_orders_synced",
+   "fieldtype": "Int",
+   "label": "Total Orders Synced",
+   "read_only": 1
+  },
+  {
+   "fieldname": "test_connection_section",
+   "fieldtype": "Section Break",
+   "label": "Test Connection"
+  },
+  {
+   "fieldname": "test_connection_btn",
+   "fieldtype": "Button",
+   "label": "Test Connection"
+  }
+ ],
+ "has_web_view": 0,
+ "hide_toolbar": 1,
+ "idx": 0,
+ "in_create": 0,
+ "is_submittable": 0,
+ "issingle": 1,
+ "istable": 0,
+ "max_attachments": 0,
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Wix Integration",
+ "name": "Wix Settings",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 0,
+ "read_only": 0,
+ "show_name_in_global_search": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 0,
+ "track_views": 0
+}
